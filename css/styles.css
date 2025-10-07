@@ -5,13 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    background: linear-gradient(to bottom, #000033, #000066); /* Space gradient */
-    position: relative;
-    overflow-x: hidden;
-}
+background-image: url('https://img.freepik.com/free-vector/realistic-galaxy-background_23-2148991322.jpg?semt=ais_hybrid');
 
 /* Twinkling Stars */
 .stars {
