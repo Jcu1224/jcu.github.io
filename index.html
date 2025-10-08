@@ -3,81 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Uy - Professional Engineer Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- For icons -->
+    <title>Engineering Portfolio - Space Theme</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">{'< Dev />'}</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Space Portfolio</h1>
-            <p>Exploring the frontiers of aerospace engineering</p>
-            <i class="fas fa-rocket fa-3x"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a mechanical engineer passionate about avionics and satellite systems. With experience in designing secondary structures for harsh environments, I specialize in thermal management, vibration resistance, and materials like aluminum alloys and composites. Recent graduate (June 2025) seeking roles at innovative companies like SpaceX.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Avionics Stack Design</h3>
-                <p>Developed an avionics system for a free flying drone, focusing on thermal cooling and structural integrity using SolidWorks and ISO standards.</p>
-            </div>
-            <div class="project">
-                <h3>Isogrid Structure Analysis</h3>
-                <p>Explored isogrid designs for aerospace applications, comparing metals and 3D-printed materials for strength and efficiency.</p>
-            </div>
-            <div class="project">
-                <h3>Opto-Mechanical Instrumentation</h3>
-                <p>Designed 25 fixture components for optical testing with ThorLabs instruments, ensuring calibration and alignment for flight systems.</p>
+            <h1 class="glitch" data-text="Your Name">Your Name</h1>
+            <p class="subtitle">Software Engineer | Full Stack Developer | Problem Solver</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my resume <a href="path/to/your-resume.pdf" target="_blank">here</a> (upload your PDF to the repo and link it).</p>
-        <ul>
-            <li>Developed 25 fixture and mounting components using SolidWorks...</li>
-            <li>Prepared Opto-Mechanical instrumentation...</li>
-            <li>Design and Manufacturing using ISO 9001:2015 and ASME Y14.5 standards...</li>
-        </ul>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate software engineer with expertise in building scalable web applications and solving complex problems. With a strong foundation in both frontend and backend technologies, I create elegant solutions that make a difference.</p>
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: johnuy1224@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/john-uy">linkedin.com/in/john-uy</a></p>
-        <p>GitHub: <a href="https://github.com/jcu1224">github.com/Jcu1224</a></p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Project Alpha</h3>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <p>A full-stack web application built with React and Node.js, featuring real-time data synchronization and user authentication.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Data Pipeline System</h3>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Scalable data processing pipeline handling millions of records daily with automated ETL workflows and monitoring.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Apache Airflow</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ML Prediction Model</h3>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Paper</a>
+                        </div>
+                    </div>
+                    <p>Machine learning model achieving 94% accuracy in predictive analytics using ensemble methods and feature engineering.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Tech Company Inc.</h4>
+                        <span class="timeline-date">2022 - Present</span>
+                        <p>Led development of microservices architecture serving 1M+ users. Improved system performance by 40% through optimization and caching strategies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Startup Co.</h4>
+                        <span class="timeline-date">2020 - 2022</span>
+                        <p>Built and deployed full-stack applications using modern frameworks. Collaborated with cross-functional teams to deliver features on schedule.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <h4>Digital Agency</h4>
+                        <span class="timeline-date">2018 - 2020</span>
+                        <p>Developed responsive web applications and implemented RESTful APIs. Gained experience in agile development methodologies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-download">
+                <a href="#" class="btn btn-primary">Download Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-item">
+                        <span>📧</span>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="contact-item">
+                        <span>💻</span>
+                        <span>github.com/yourusername</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-item">
+                        <span>💼</span>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 John Uy. All rights reserved.</p>
+        <p>&copy; 2025 Your Name. Built with HTML & CSS</p>
     </footer>
-
-    <!-- Twinkling Stars (CSS handles this) -->
-    <div class="stars"></div>
 </body>
 </html>
