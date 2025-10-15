@@ -8,10 +8,17 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #ffffff;
-    background: linear-gradient(to bottom, #0a0a1a, #000033, #000066);
+    background: linear-gradient(to bottom, 
+        #0a0a1a 0%, 
+        #000033 25%, 
+        #000066 50%,
+        #000033 75%,
+        #0a0a1a 100%);
+    background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 /* Twinkling Stars */
@@ -462,8 +469,9 @@ h3 {
 }
 
 /* About and Resume Sections */
-#about, #resume {
+.centered-section {
     max-width: 900px;
+    margin: 0 auto;
 }
 
 #about p, #resume p {
