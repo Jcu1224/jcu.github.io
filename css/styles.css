@@ -487,6 +487,52 @@ h3 {
     color: #dddddd;
 }
 
+/* Resume Button */
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 204, 255, 0.1));
+    padding: 1.5em 2.5em;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 204, 255, 0.5);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 2em 0;
+}
+
+.resume-button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.3), rgba(0, 204, 255, 0.2));
+    box-shadow: 
+        0 10px 30px rgba(0, 204, 255, 0.5),
+        inset 0 0 20px rgba(0, 102, 255, 0.2);
+    border-color: rgba(0, 204, 255, 0.8);
+}
+
+.resume-button i {
+    color: #00ccff;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.8));
+}
+
+.resume-highlights {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.resume-highlights h3 {
+    color: #00ccff;
+    margin-bottom: 1em;
+}
+
 #resume ul {
     list-style: none;
     text-align: left;
